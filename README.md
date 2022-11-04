@@ -33,10 +33,6 @@ The database can also keep track of the sets that each card belongs to.
 |endpoint|/decks/<int:id>/enchantments_in_deck|/decks/<int:id>/artifacts_in_deck|
 
 
-1. Over time, I realized that there were some problems with my initial design. I initially set up the card names to be unique, but when I considered the endpoints I wanted to implement, I realized that I needed to change this so that a player could have more than one card with the same name in a deck. I also realized that the Deck entity doesn't need to have a size because you can query the count of the cards to get the size of the deck.
 
-2. I chose to use an ORM because I wanted to focus on writing the Python code, and the queries that I wanted to implement were simple enough that I wouldn't need to use raw SQL.
-
-3. I plan to improve the API by adding more endpoints to get more categorical results. I want to implement endpoints that show all cards with a certain rarity, color identity, and converted mana cost. These can be used for deck stats, as well as the average converted mana cost in a deck, and percentages for card type, color, and rarity.
 
 
